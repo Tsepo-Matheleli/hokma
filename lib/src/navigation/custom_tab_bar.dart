@@ -24,19 +24,6 @@ class CustomTabBar extends StatelessWidget {
         mainAxisSize: MainAxisSize.max,
         children: [
           Expanded(
-            flex: 2,
-            child: SizedBox(
-              height: 100,
-              width: 80,
-              child: Image.asset("assets/images/HOKMA INSTITUTE-1 2icon.png",
-                  fit: BoxFit.fill),
-            ),
-          ),
-          Expanded(
-            child: Container(),
-            flex: 5,
-          ),
-          Expanded(
             flex: 4,
             child: TabBar(
               indicatorColor: Colors.transparent,
@@ -47,6 +34,19 @@ class CustomTabBar extends StatelessWidget {
               unselectedLabelColor: AppColors.buttonTextColor,
               controller: controller,
               tabs: tabs,
+            ),
+          ),
+          Expanded(
+            child: Container(),
+            flex: 5,
+          ),
+          Expanded(
+            flex: 2,
+            child: SizedBox(
+              height: 100,
+              width: 70,
+              child: Image.asset("assets/images/HOKMA INSTITUTE-1 2icon.png",
+                  fit: BoxFit.fill),
             ),
           ),
         ],
